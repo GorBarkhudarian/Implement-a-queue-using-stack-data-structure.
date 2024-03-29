@@ -92,3 +92,29 @@ void enqueue()
 //Function to delete an element from the queue using stack
  
 void dequeue()
+{
+    int i;
+ 
+    for (i = 0;i <= count;i++)
+    {
+        push2(pop1());
+    }
+    pop2();
+    count--;
+    for (i = 0;i <= count;i++)
+    {
+        push1(pop2());
+    }
+}
+ 
+//Function to display the elements in the stack
+ 
+void display()
+{
+    int i;
+ 
+    for (i = 0;i <= top1;i++)
+    {
+        printf(" %d ", st1[i]);
+    }
+}
